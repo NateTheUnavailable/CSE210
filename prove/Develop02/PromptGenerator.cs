@@ -1,9 +1,13 @@
 using System;
 
-public class PromptGenerator
+class PromptGenerator
 {
-    static void Main(string[] args)
+    public string GeneratePrompt()
     {
-        Console.WriteLine("Hello Develop02 World!");
+        string[] prompts = { "Write about a happy moment today.", "What are you grateful for today?", "Describe a challenge you overcame recently." };
+        Random random = new Random();
+        int index = random.Next(prompts.Length);
+
+        return prompts[index];
     }
 }

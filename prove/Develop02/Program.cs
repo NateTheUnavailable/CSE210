@@ -1,9 +1,10 @@
 using System;
 
-class Program
+class JournalProgram
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        Console.WriteLine("Hello Develop02 World!");
+        JournalMenu menu = new JournalMenu();
+        menu.DisplayMenu();
     }
 }
