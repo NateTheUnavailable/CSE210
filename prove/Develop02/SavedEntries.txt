@@ -1,0 +1,45 @@
+Date: 6/22/2024 1:02:36 PM
+Prompt: Describe a challenge you overcame recently.
+Entry: how are you
+
+Date: 6/22/2024 1:03:41 PM
+Prompt: What are you grateful for today?
+Entry: hello
+
+Date: 6/22/2024 1:07:58 PM
+Prompt: What are you grateful for today?
+Entry: this should appear on a text file but here we are
+
+Date: 6/22/2024 1:09:18 PM
+Prompt: Describe a challenge you overcame recently.
+Entry: this is a struggle
+
+Date: 6/22/2024 1:11:17 PM
+Prompt: Describe a challenge you overcame recently.
+Entry: write this to file
+
+Date: 6/22/2024 1:17:53 PM
+Prompt: Describe a challenge you overcame recently.
+Entry: i overcame this program
+
+Date: 6/22/2024 1:02:36 PM
+Prompt: Describe a challenge you overcame recently.
+Entry: how are you
+
+Date: 6/22/2024 1:03:41 PM
+Prompt: What are you grateful for today?
+Entry: hello
+
+Date: 6/22/2024 1:07:58 PM
+Prompt: What are you grateful for today?
+Entry: this should appear on a text file but here we are
+
+Date: 6/22/2024 1:09:18 PM
+Prompt: Describe a challenge you overcame recently.
+Entry: this is a struggle
+
+Date: 6/22/2024 1:11:17 PM
+Prompt: Describe a challenge you overcame recently.
+Entry: write this to file
+
+

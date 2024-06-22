@@ -2,10 +2,11 @@ using System;
 
 class JournalMenu
 {
+    private const string SavedEntriesFilePath = @"C:\Users\nate\OneDrive\Documents\CSE210\CSE210\prove\Develop02\SavedEntries.txt";
     public void DisplayMenu()
     {
         bool exit = false;
-
+ 
         while (!exit)
         {
             Console.WriteLine("1. Create a new journal entry");
@@ -46,7 +47,7 @@ class JournalMenu
         PromptGenerator promptGenerator = new PromptGenerator();
         string prompt = promptGenerator.GeneratePrompt();
 
-        Console.WriteLine("Enter your entry:");
+        Console.WriteLine(prompt);
         string entryText = Console.ReadLine();
 
         Entry newEntry = new Entry(DateTime.Now, prompt, entryText);
@@ -72,7 +73,7 @@ class JournalMenu
     {
         string[] entryFiles = Directory.GetFiles(Directory.GetCurrentDirectory(), "*.txt");
 
-        using (StreamWriter sw = File.CreateText("SavedEntries.txt"))
+        using (StreamWriter sw = File.CreateText(SavedEntriesFilePath))
         {
             foreach (string file in entryFiles)
             {
@@ -90,7 +91,7 @@ class JournalMenu
 
         if (File.Exists(savedEntriesFile))
         {
-            string[] savedEntries = File.ReadAllLines(savedEntriesFile);
+            string[] savedEntries = File.ReadAllLines(SavedEntriesFilePath);
             foreach (string entry in savedEntries)
             {
                 Console.WriteLine(entry);
