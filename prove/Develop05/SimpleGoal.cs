@@ -1,6 +1,7 @@
 public class SimpleGoal : Goal
 {
     public bool IsComplete { get; set; }
+    public override int Points { get; set; }
 
     public override void Achieve()
     {

@@ -4,6 +4,8 @@ public class ChecklistGoal : Goal
     public int PointsPerCompletion { get; set; }
     public int TotalCompletions { get; set; }
     public int BonusPoints { get; set; }
+    public override int Points { get; set; }
+
 
     public ChecklistGoal(string description, List<Task> tasks, int pointsPerCompletion, int totalCompletions, int bonusPoints)
     {

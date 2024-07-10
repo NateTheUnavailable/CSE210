@@ -1,7 +1,7 @@
 public class Goal
 {
     public string Description { get; set; }
-    public int Points { get; internal set; }
+    public virtual int Points { get; set; } = 0;
 
     public virtual void Achieve()
     {

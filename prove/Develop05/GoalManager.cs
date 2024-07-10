@@ -13,9 +13,31 @@ public class GoalManager
         userScore = 0;
     }
 
-    public void AddGoal(Goal goal)
+    public void AddGoal(string description, int points)
     {
+        Console.WriteLine("Select goal type (1 - Simple, 2 - Eternal, 3 - Checklist):");
+        int type = Convert.ToInt32(Console.ReadLine());
+
+        Goal goal;
+        switch (type)
+        {
+            case 1:
+                goal = new SimpleGoal { Description = description, Points = points };
+                break;
+            case 2:
+                goal = new EternalGoal { Description = description, Points = points };
+                break;
+            case 3:
+                goal = new ChecklistGoal(description, new List<Task>(), points, 0, 0);
+                break;
+            default:
+                Console.WriteLine("Invalid goal type. Adding as a Simple goal.");
+                goal = new SimpleGoal { Description = description, Points = points };
+                break;
+        }
+
         goals.Add(goal);
+        Console.WriteLine("Goal added successfully.");
     }
 
     public void RecordEvent(int goalIndex)
